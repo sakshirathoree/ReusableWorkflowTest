@@ -16,7 +16,7 @@ jobs:
         run: echo Hello, world!
 
   docker:
-    uses: sakshirathoree/ReusableWorkflow@main
+    uses: sakshirathoree/ReusableWorkflow/.github/workflows/BuildAndPublishDockerImage.yml@main
     with:
       image_name: my-awesome-app
       tag: ${{ github.run_number }}
